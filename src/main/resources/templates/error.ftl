@@ -21,6 +21,9 @@
       </div>
     </div>
   </div>
+  <div class="row center footer">
+    <p>Return to: <a href="/">Home page</a></p>
+  </div>
 </div>
 
 </body>

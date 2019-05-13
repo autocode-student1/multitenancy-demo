@@ -86,7 +86,7 @@
     </div>
   </div>
   <div class="row center footer">
-    <p>Created by John Smith <a href="mailto:john.smith@acme.com">john.smith@acme.com</a></p>
+    <p>Created by John Smith. Want a similar booking service? Register at: <a href="/">Registration page</a></p>
   </div>
 </div>
 
