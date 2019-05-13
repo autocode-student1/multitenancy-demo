@@ -1,0 +1,73 @@
+html {
+  font-size: 2em;
+  color: #212121;
+}
+
+.footer {
+  font-size: 0.5rem;
+}
+
+.select-wrapper input.select-dropdown,
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+  height: 1.5rem;
+  line-height: 1.5rem;
+  color: #212121;
+  font-size: 0.6rem;
+}
+
+.input-field {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-label {
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+label {
+  color: #212121;
+}
+
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: #212121;
+  font-size: 0.6rem;
+}
+
+h6 {
+  font-weight: 700;
+}
+
+input[type=text]:not(.browser-default):disabled {
+  color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.8);
+}
+
+th {
+  font-weight: 500;
+}
+
+th, td {
+  font-size: 0.6rem;
+  padding: 15px 25px;
+}
+
+.btn-large {
+  font-size: 0.6rem;
+}
