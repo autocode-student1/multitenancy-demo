@@ -1,6 +1,5 @@
 package com.epam.multitenancy.demo.service;
 
-import com.epam.multitenancy.demo.configuration.web.TenantHolder;
 import com.epam.multitenancy.demo.domain.Appointment;
 import com.epam.multitenancy.demo.domain.Barber;
 import com.epam.multitenancy.demo.repository.AppointmentRepository;
@@ -25,7 +24,7 @@ public class BarbershopService {
     private final AppointmentRepository appointmentRepository;
 
     public List<Barber> getBarbers() {
-        return barberRepository.findByTenantId(TenantHolder.getTenantId());
+        return barberRepository.findAll();
     }
 
     public List<LocalDateTime> getTimeSlots() {
@@ -41,7 +40,6 @@ public class BarbershopService {
                 .dateTime(timeSlot)
                 .clientName(clientName)
                 .clientPhone(clientPhone)
-                .tenantId(TenantHolder.getTenantId())
                 .build();
         return appointmentRepository.save(appointment);
     }

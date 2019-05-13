@@ -2,7 +2,7 @@ package com.epam.multitenancy.demo.configuration.web;
 
 public class TenantHolder {
 
-    private static final ThreadLocal<String> TENANT_ID = new ThreadLocal<>();
+    private static final ThreadLocal<String> TENANT_ID = ThreadLocal.withInitial(() -> "PUBLIC");
 
     public static String getTenantId() {
         return TENANT_ID.get();

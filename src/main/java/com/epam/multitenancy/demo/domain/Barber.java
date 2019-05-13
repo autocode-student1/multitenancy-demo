@@ -26,6 +26,4 @@ public class Barber {
 
     @OneToMany(mappedBy = "barber", cascade = ALL)
     private List<Appointment> appointments;
-
-    private String tenantId;
 }
