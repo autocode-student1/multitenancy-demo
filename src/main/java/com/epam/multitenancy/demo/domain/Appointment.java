@@ -29,4 +29,6 @@ public class Appointment {
     private String clientName;
 
     private String clientPhone;
+
+    private String tenantId;
 }
