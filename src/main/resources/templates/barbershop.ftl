@@ -79,6 +79,7 @@
               </div>
               <div class="col s1 m4 l5"></div>
             </div>
+            <input type="hidden" name="tenantId" value="${tenantId}"/>
           </form>
         </div>
       </div>

@@ -1,5 +1,6 @@
 package com.epam.multitenancy.demo.controller;
 
+import com.epam.multitenancy.demo.configuration.web.TenantHolder;
 import com.epam.multitenancy.demo.domain.Appointment;
 import com.epam.multitenancy.demo.service.BarbershopService;
 import lombok.RequiredArgsConstructor;
@@ -28,6 +29,7 @@ public class BarbershopController {
         ModelAndView mav = new ModelAndView("barbershop");
         mav.addObject("barbers", barbershopService.getBarbers());
         mav.addObject("timeSlots", barbershopService.getTimeSlots());
+        mav.addObject("tenantId", TenantHolder.getTenantId());
         return mav;
     }
 
